@@ -26,6 +26,25 @@ embed The different types of power outlets throughout the world. pic.twitter.com
 Google Map [embed]
 高德地图
 百度地图
+pdf 在线PDF阅读</content></entry><entry><title>notion2markdown-action渲染效果展示 (2)</title><url>/posts/notion2markdown-action%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA-2/</url><categories/><tags><tag>notion</tag><tag>hexo</tag><tag>blog</tag></tags><content type="html"> 前言 此前由于想在 Notion 上写博客，同步到静态博客 hexo 上进行发布，故采用GitHub Actions，开发了 notion2markdown-action 方案，详细介绍及部署方式见 Notion2Markdown 联动发布 Hexo 博客 - 自动化部署方案 ，此文则为该方案的渲染效果展示。
+理论上，该方案转换的效果适用于所有支持 Markdown→HTML 的静态博客。
+为进行对照，特将 Notion 上本条文章的原始内容公开，用于对比。
+Notion 平台原文链接： notion2markdown-action 渲染效果展示 效果展示 bookmark Notion2Markdown联动发布Hexo博客-自动化部署方案Notion+Hexo+Github Actions自动发布方案, 终于可以解放双手啦!（本文采用Notion撰写）https://blog.cuger.cn/p/634642fd/支持撰写标题
+upgrade v0.5.2 · Doradx/notion2markdown-action@e9378a9convert notion database pages to markdown files for hexo or hugo - upgrade v0.5.2 · Doradx/notion2markdown-action@e9378a9https://github.com/Doradx/notion2markdown-action/actions/runs/4744114550GitHub 页面
+飛來飛去的飛人事件 | 老高與小茉 Mr &amp; Mrs Gao【加入會員按鈕】https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ/join【訂閱頻道按鈕】https://goo.gl/VhzZeS------------------------------------------------相關鏈接：超出你想象的...https://www.youtube.com/watch?v=9gXPmfLWO4U自动抓取页面概览，并生成图标、概览图
+Hannovermarkt · Hannovermarkt 1, 1200 Wien, Austria★★★★☆ · Markethttps://www.google.com/maps/place/Hannovermarkt/@48.2241821,16.3715072,14z/data=!4m6!3m5!1s0x476d064b379e1a9d:0xe791f1797ae7a2b8!8m2!3d48.231775!4d16.3687714!16s/g/112yfwj8xGoogle Map [link_preview]
+百度地图浏览地图、搜索地点、查询公交驾车线路、查看实时路况，您的出行指南、生活助手。提供地铁线路图浏览，乘车方案查询，以及准确的票价和时间信息。https://j.map.baidu.com/71/1O百度地图 [link_preview]
+link_preview 从网页抓取信息，目前暂只支持 GitHub 站点。
+link_preview link_preview link_preview link_preview link_preview audio 邓紫棋-偶尔.MP3
+Rocky - 那就这样吧.MP3
+video YouTube
+Bilibili
+腾讯视频
+embed The different types of power outlets throughout the world. pic.twitter.com/ItzzkiUg85
+&amp;mdash; World of Engineering (@engineers_feed) April 18, 2023 Twitter
+Google Map [embed]
+高德地图
+百度地图
 pdf 在线PDF阅读</content></entry><entry><title>关于 Hugo NexT 组织</title><url>/about.html</url><categories/><tags/><content type="html"> Hugo NexT 组织是由众多喜爱 NexT 主题及风格的世界各地友人共同组建而成，为的就是让这个主题继续在 Hugo 引擎中也能得到发扬光大，在此也欢迎你的加入！
 我们的愿景 延续 NexT 经典的黑白调搭配，保持简单的易用性及强大的功能。
 使用反馈 加入 GitHub Discussions 或 Gitter 在线讨论 🍻 GitHub Issues 提交错误报告 🐛 GitHub Feature 表新功能的想法 ✨ 同时国内用户也可加入 QQ 群交流： 604710815</content></entry><entry><title>站点示例</title><url>/flinks.html</url><categories/><tags/><content type="html"> 如想交换本站友情链接，请在评论区留下你的站点信息，格式参考如下：
