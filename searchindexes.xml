@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>SSH 免密登录远程机器</title><url>/posts/ssh-login.html</url><categories><category>软件管理</category></categories><tags><tag>ssh</tag><tag>免密</tag></tags><content type="html"> 本地机器如何实现SSH免密登录远程机器
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Android HIDL 服务实现</title><url>/posts/android-hidl.html</url><categories><category>android 技术</category></categories><tags><tag>android</tag><tag>HIDL</tag></tags><content type="html"> 概述 引用Android 官方文档描述：
+HAL 接口定义语言（简称 HIDL）是用于指定 HAL 和其用户之间的接口的一种接口描述语言 (IDL)。HIDL 允许指定类型和方法调用（会汇集到接口和软件包中）。从更广泛的意义上来说，HIDL 是指用于在可以独立编译的代码库之间进行通信的系统。从 Android 10 开始，HIDL 已废弃，Android 将在所有位置改用 AIDL 。
+HIDL 旨在用于进程间通信 (IPC)。使用 HDL 创建的 HAL 称为绑定式 HAL，因为它们可以使用 Binder 进程间通信 (IPC) 调用与其他架构层进行通信。绑定式 HAL 在独立于使用它们的客户端的进程中运行。对于必须与进程相关联的代码库，还可以使用 透传模式 （在 Java 中不受支持）。
+HIDL 可指定数据结构和方法签名，这些内容会整理归类到接口（与类相似）中，而接口会汇集到软件包中。尽管 HIDL 具有一系列不同的关键字，但 C++ 和 Java 程序员对 HIDL 的语法并不陌生。此外，HIDL 还使用 Java 样式的注解
+HIDL 服务端实现（C++） 创建HAL 接口 创建目录，创建HAL 接口问题：
+mkdir vendor/czx/hardware/interfaces/hello/1.0/default touch vendor/czx/hardware/interfaces/hello/1.0/IHello.hal 在IHello.hal 中进行接口的声明：
+package vendor.czx.hardware.hello@1.0; interface IHello { hello(string name) generates (string result); foo(int32_t a, int32_t b) generates (int32_t result); print(string s); }; 详细HAL 语法
+数据类型 | Android 开源项目 | Android Open Source Project 建立HIDL根目录映射关系 在vendor/czx/hardware/interfaces/hello/1.0目录下创建一个Android.bp文件.
+subdirs = [ &amp;amp;#34;*&amp;amp;#34;, ] …</content></entry><entry><title>SSH 免密登录远程机器</title><url>/posts/ssh-login.html</url><categories><category>软件管理</category></categories><tags><tag>ssh</tag><tag>免密</tag></tags><content type="html"> 本地机器如何实现SSH免密登录远程机器
 本地机器生成ssh 密钥 #输入命令，然后一直回车. 密钥保存在用户根目录的.ssh目录下，例如/home/chenzx/.ssh/ ssh-keygen -t rsa ssh 公钥copy到远程机器 ssh-copy-id -i ~/.ssh/id_rsa.pub -p 22 xxxx(登录账号名)@xxx.xxx.xxx.xxx(远程服务器地址) 验证 #如果能直接登录说明配置成功 ssh xxxx(登录账号名)@)@xxx.xxx.xxx.xxx</content></entry><entry><title>HomeBrew 国内安装和常用命令</title><url>/posts/brew-install.html</url><categories><category>软件管理</category></categories><tags><tag>brew</tag></tags><content type="html"><![CDATA[   Homebrew 是一款 Mac OS （Linux/WSL下也能使用）平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。
 首先在命令行运行如下几条命令设置环境变量：
 # Set PATH, MANPATH, etc., for Homebrew. export HOMEBREW_BREW_GIT_REMOTE=&#34;https://mirrors.ustc.edu.cn/brew.git&#34; export HOMEBREW_CORE_GIT_REMOTE=&#34;https://mirrors.ustc.edu.cn/homebrew-core.git&#34; export HOMEBREW_BOTTLE_DOMAIN=&#34;https://mirrors.ustc.edu.cn/homebrew-bottles&#34; export HOMEBREW_API_DOMAIN=&#34;https://mirrors.ustc.edu.cn/homebrew-bottles/api&#34; 国内安装 HomeBrew 一键安装：
