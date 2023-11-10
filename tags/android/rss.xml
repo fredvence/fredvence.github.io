@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>android on czx的小站</title><link>https://www.czxblog.cn/tags/android/</link><description>Recent content in android on czx的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 10 Nov 2023 08:57:46 +0000</lastBuildDate><atom:link href="https://www.czxblog.cn/tags/android/rss.xml" rel="self" type="application/rss+xml"/><item><title>Android HIDL 服务实现</title><link>https://www.czxblog.cn/posts/android-hidl.html</link><pubDate>Fri, 10 Nov 2023 08:57:46 +0000</pubDate><guid>https://www.czxblog.cn/posts/android-hidl.html</guid><description>概述 引用Android 官方文档描述： HAL 接口定义语言（简称 HIDL）是用于指定 HAL 和其用户之间的接口的一种接口描述语言 (IDL)。HIDL 允许指</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>android on czx的小站</title><link>https://www.czxblog.cn/tags/android/</link><description>Recent content in android on czx的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 10 Nov 2023 08:57:46 +0000</lastBuildDate><atom:link href="https://www.czxblog.cn/tags/android/rss.xml" rel="self" type="application/rss+xml"/><item><title>Android HIDL 服务实现</title><link>https://www.czxblog.cn/posts/android-hidl.html</link><pubDate>Fri, 10 Nov 2023 08:57:46 +0000</pubDate><guid>https://www.czxblog.cn/posts/android-hidl.html</guid><description>&lt;h1 id="概述">概述
+&lt;a class="header-anchor" href="#%e6%a6%82%e8%bf%b0">&lt;/a>
+&lt;/h1>&lt;p>引用Android 官方文档描述：&lt;/p>
+&lt;blockquote>
+&lt;p>HAL 接口定义语言（简称 HIDL）是用于指定 HAL 和其用户之间的接口的一种接口描述语言 (IDL)。HIDL 允许指定类型和方法调用（会汇集到接口和软件包中）。从更广泛的意义上来说，HIDL 是指用于在可以独立编译的代码库之间进行通信的系统。从 Android 10 开始，HIDL 已废弃，Android 将在所有位置改用 
+&lt;a href="https://source.android.google.cn/docs/core/architecture/aidl?hl=zh-cn" title="AIDL" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+AIDL
+&lt;i class="fa fa-external-link-alt">&lt;/i>
+&lt;/a>。&lt;/p>
+&lt;p>HIDL 旨在用于进程间通信 (IPC)。使用 HDL 创建的 HAL 称为绑定式 HAL，因为它们可以使用 Binder 进程间通信 (IPC) 调用与其他架构层进行通信。绑定式 HAL 在独立于使用它们的客户端的进程中运行。对于必须与进程相关联的代码库，还可以使用
+&lt;a href="https://source.android.google.cn/docs/core/architecture/hidl?hl=zh-cn#passthrough" title="透传模式" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+透传模式
+&lt;i class="fa fa-external-link-alt">&lt;/i>
+&lt;/a>（在 Java 中不受支持）。&lt;/p>
+&lt;p>HIDL 可指定数据结构和方法签名，这些内容会整理归类到接口（与类相似）中，而接口会汇集到软件包中。尽管 HIDL 具有一系列不同的关键字，但 C++ 和 Java 程序员对 HIDL 的语法并不陌生。此外，HIDL 还使用 Java 样式的注解&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
